@@ -1,21 +1,47 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <title>Çok Yakında</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Çok Yakında</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;800&display=swap" rel="stylesheet">
+  <style>
+    .info-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: linear-gradient(135deg, #ff5cad, #ff94d0);
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 30px;
+      box-shadow: 0 0 15px #ff94d070;
+      cursor: pointer;
+      z-index: 10;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+
+    .info-button:hover {
+      background: linear-gradient(135deg, #ff94d0, #ff5cad);
+      box-shadow: 0 0 25px #ff94d0a0;
+      transform: scale(1.05);
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <div class="error-code">⏳</div>
-        <div class="error-message">Çok Yakında!</div>
-        <div class="error-description">
-            Burası şu anda yıldız tozlarıyla inşa ediliyor.<br>
-            Kısa bir süre sonra geri dön ve farkı hisset!
-        </div>
-        <div class="graphic-element"></div>
+  <div class="container">
+    <div class="error-code">⏳</div>
+    <div class="error-message">Çok Yakında!</div>
+    <div class="error-description">
+      Burası şu anda yıldız tozlarıyla inşa ediliyor.<br>
+      Kısa bir süre sonra geri dön ve farkı hisset!
     </div>
+    <div class="graphic-element"></div>
+  </div>
+  <a href="/bilgilendirme" class="info-button">Bilgilendirme</a>
 </body>
 </html>
